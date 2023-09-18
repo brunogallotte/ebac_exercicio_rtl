@@ -9,6 +9,7 @@ describe('Teste para o componente PostComment', () => {
     });
 
     test('Testando envio da mensagem pelo click do botão comentar', () => {
+        render(<PostComment/>)
         fireEvent.change(screen.getByTestId('campo-comentar'), {
             target: {
                 value: 'Foto linda'
